@@ -1,8 +1,8 @@
 {
   "name": "mocha-junit-reporter",
-  "version": "1.23.1",
+  "version": "2.0.0",
   "description": "A JUnit reporter for mocha.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint index.js test/*; exit 0",
     "test": "MOCHA_FILE=test/mocha.xml node_modules/.bin/mocha test --reporter=spec",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelleeallen/mocha-junit-reporter"
+    "url": "https://github.com/aaomidi/mocha-junit-reporter"
   },
   "keywords": [
     "mocha",
@@ -18,22 +18,19 @@
     "reporter"
   ],
   "author": {
-    "name": "Michael Allen",
-    "email": "michael.lee.allen@gmail.com"
+    "name": "Amir Omidi",
+    "email": "amir@aaomidi.com"
   },
   "license": "MIT",
   "devDependencies": {
-    "chai": "^3.0.0",
-    "chai-xml": "^0.3.0",
-    "eslint": "^4.0.0",
+    "@types/node": "^12.11.7",
     "libxmljs": "^0.19.5",
     "mocha": "^5.0.0",
-    "test-console": "^1.0.0"
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "md5": "^2.1.0",
-    "mkdirp": "~0.5.1",
     "strip-ansi": "^4.0.0",
     "xml": "^1.0.0"
   },
